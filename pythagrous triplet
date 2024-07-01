@@ -1,0 +1,17 @@
+# Function to check if the given numbers form a Pythagorean triplet
+def is_pythagorean_triplet(a, b, c):
+    # Sort the numbers to identify the largest one
+    a, b, c = sorted([a, b, c])
+    # Check if the square of the largest number equals the sum of the squares of the other two
+    return a**2 + b**2 == c**2
+
+# Get user input for the three numbers
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+c = int(input("Enter the third number: "))
+
+# Check if the numbers form a Pythagorean triplet and print the result
+if is_pythagorean_triplet(a, b, c):
+    print(f"{a}, {b}, and {c} form a Pythagorean triplet.")
+else:
+    print(f"{a}, {b}, and {c} do not form a Pythagorean triplet.")
