@@ -1,0 +1,8 @@
+# Get user input for the string
+text = input("Enter a string: ")
+
+# Check if the string is equal to its reverse
+if text == text[::-1]:
+    print(f"{text} is a palindrome.")
+else:
+    print(f"{text} is not a palindrome.")
