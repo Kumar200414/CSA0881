@@ -1,0 +1,17 @@
+# Function to check if a number is composite
+def is_composite(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return True
+    return False
+
+# Get user input for the number
+number = int(input("Enter a number: "))
+
+# Check if the number is composite and print the result
+if is_composite(number):
+    print(f"{number} is a composite number.")
+else:
+    print(f"{number} is not a composite number.")
