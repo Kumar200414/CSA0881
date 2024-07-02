@@ -1,10 +1,8 @@
-# Get user input for the number
+
 number = int(input("Enter a number: "))
 
-# Calculate the sum of the digits
 sum_of_digits = sum(int(digit) for digit in str(number))
 
-# Check if the number is divisible by the sum of its digits
 if number % sum_of_digits == 0:
     print(f"{number} is a Harshad number.")
 else:
