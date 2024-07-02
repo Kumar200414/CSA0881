@@ -1,0 +1,21 @@
+# Get user input
+user_input = input("Enter a string: ")
+
+# Define vowels
+vowels = "aeiouAEIOU"
+
+# Initialize counters
+num_vowels = 0
+num_consonants = 0
+
+# Iterate through each character in the input string
+for char in user_input:
+    if char.isalpha():  # Check if the character is a letter
+        if char in vowels:
+            num_vowels += 1
+        else:
+            num_consonants += 1
+
+# Print the results
+print(f"Number of vowels: {num_vowels}")
+print(f"Number of consonants: {num_consonants}")
